@@ -1,66 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Catálogo de Productos</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Producto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container-logo">
-            <h1 class="logo-titulo"><i class="fa-solid fa-gamepad"></i>Importadora</h1>
-            <p>Importadora Globa</p>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+
+              <H1>Importadora </H1>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Despachos</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary">Iniciar Sesion</a>
+            <a href="#" class="btn btn-primary">Regístrate</a>
+            <a href="#" class="carrito-icon" onclick="toggleCarrito()">
+            <img src="img/bolsa-de-la-compra (1).png" alt="Carrito de Compras">
+          </a>
         </div>
-   
-        <form class="seach">
-            <div class="seach-buscar">
-               <i class="fa-solid fa-search"></i>
-                <input type="text" placeholder="Buscar los mejores productos ..." id="searchInput">
-
-            </div>
-            
-
-            <div class="user-actions">
-                <i class="fa-regular fa-user"></i>
-                <span id="userGreeting"></span>
-                <a id="loginLink" href="login.html">Hola! Iniciamos sesión?</a>
-                
-                <a id="logoutLink" href="#" style="display:none;">Cerrar sesión</a>
-            </div>
-        </form>
     </header>
-    <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </nav>
-  <h1>Catálogo de Productos</h1>
-  <div id="catalogo">
-  
-    <div class="producto">
-      <h2>Producto 1</h2>
-      
-      <p>Precio: $10.00</p>
-      <button onclick="agregarAlCarrito('producto1')">Agregar al carrito</button>
-    </div>
-    
+    <br>
 
-    <div class="producto">
-      <h2>Producto 2</h2>
-      <p>Descripción del producto 2.</p>      <p>Precio: $15.00</p>
-      <button onclick="agregarAlCarrito('producto2')">Agregar al carrito</button>
-    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-image">
+                <img src="img/Recurso-4-1.png" alt="Imagen Principal del Producto">
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+      <div id="catalogo">
+        <div id="producto1" class="producto">
+        <img src="img/carcasa.jpg" alt="">
+        <h3>Carcasas de celulares</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto1')">Agregar al carrito</button>
+      </div>
+      
+      <div id="producto2" class="producto">
+        <img src="img/carcasa (2).jpg" alt="">
+        <h3>Carcasas de celulares</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto2')">Agregar al carrito</button>
+      </div>
+      
+      <div id="producto3" class="producto">
+        <img src="img/carcasa3.jpg" alt="">
+        <h3>Carcasas de celulares</h3>
+        <p>Precio: $1.000</p>
+        <button onclick="agregarAlCarrito('producto3')">Agregar al carrito</button>
+      </div>
     
-    <div class="producto">
-      <h2>Producto 3</h2>
-      <button onclick="agregarAlCarrito('producto3')">Agregar al carrito</button>
+      <div id="producto4" class="producto">
+        <img src="img/llavero.jpg" alt="">
+        <h3>Llaveros</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto4')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto5" class="producto">
+        <img src="img/llavero (2).jpg" alt="">
+        <h3>Llaveros</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto5')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto6" class="producto">
+        <img src="img/parlante.jpg" alt="">
+        <h3>Parlantes</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto6')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto7" class="producto">
+        <img src="img/parlante (2).jpg" alt="">
+        <h3>Parlantes</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto7')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto8" class="producto">
+        <img src="img/audifono.jpg" alt="">
+        <h3>Audífonos</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto8')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto9" class="producto">
+        <img src="img/audifono (2).jpg" alt="">
+        <h3>Audífonos</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto9')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto10" class="producto">
+        <img src="img/teclado.jpg" alt="">
+        <h3>Teclados</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto10')">Agregar al carrito</button>
+      </div>
+    
+      <div id="producto11" class="producto">
+        <img src="img/teclado (2).jpg" alt="">
+        <h3>Teclados</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto11')">Agregar al carrito</button>
+      </div>
+      <div id="producto11" class="producto">
+        <img src="img/teclado (4).jpg" alt="">
+        <h3>Teclados</h3>
+        <p>Precio: $1000</p>
+        <button onclick="agregarAlCarrito('producto11')">Agregar al carrito</button>
+      </div>
     </div>
-  </div>
-  <script src="app.js"></script>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para Empezar?</h2>
+            <p>Únete a miles de clientes satisfechos y experimenta la diferencia en Conexión Global de Productos</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Contáctanos</a>
+            </div>
+            <p>&copy; 2024 Conexión Global de Productos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <div id="carrito" class="carrito">
+        <button class="cerrar-carrito" onclick="cerrarCarrito()">X</button>
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+
+      <script>
+        function toggleCarrito() {
+            var carrito = document.getElementById('carrito');
+            if (carrito.style.display === 'none' || carrito.style.display === '') {
+                carrito.style.display = 'block';
+            } else {
+                carrito.style.display = 'none';
+            }
+        }
+        
+        function cerrarCarrito() {
+            document.getElementById('carrito').style.display = 'none';
+        }
+        </script>  
+      
+      <script src="agregar.js"></script>
+
+      
+ 
 </body>
 </html>
